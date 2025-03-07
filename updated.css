@@ -63,9 +63,10 @@
   --yelpRed: #c1272d;
 }
 
-/* Page background */
 body.page {
-  background-color: var(--green);
+  background-image: url("https://havanasavannah.com/images/c28d7be94498f66129c5.png");
+  background-size: cover;
+  background-position: center;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
