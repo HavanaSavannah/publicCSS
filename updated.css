@@ -58,14 +58,14 @@
   --green: #148744;
   --green2: #5e8609;
   --white: #FFFFFF;
-  --offWhite: #FFFDD0;
+  --offWhite: #FFFFFF;
   --googleBlue: #4485f4;
   --yelpRed: #c1272d;
 }
 
 /* Page background */
 body.page {
-  background-color: var(--offWhite);
+  background-color: var(--green);
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
