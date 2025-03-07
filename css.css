@@ -63,68 +63,152 @@
   --yelpRed: #c1272d;
 }
 
-/* Main form container */
-.form-container {
-  background-color: var(--maroon);
-  border-radius: 10px;
-  padding: 5px;
-  max-width: 600px;
-  margin: 20px auto;
-}
-
-/* Header styling */
-.form-container h3 {
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  text-align: center;
-  color: var(--white);
-}
-
-/* Inner form styling */
-.form-inner {
+/* Page background */
+body.page {
   background-color: var(--offWhite);
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  margin: 30px auto;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* Input fields */
-.form-inner input,
-.form-inner textarea {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
+/* Container centering all content */
+#centeringDiv {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header & Logo */
+#header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#companyLogo {
+  max-width: 200px;
+}
+
+/* Navigation area */
+#nav {
+  margin-bottom: 20px;
+}
+
+/* Main content area */
+#main {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Headline title */
+.pageHeadlines {
+  font-size: 2rem;
+  color: var(--maroon);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Error messages */
+.errorMessage {
+  color: var(--red);
+  text-align: center;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* Disclaimer text */
+.disclaimerText {
+  font-size: 1.1rem;
+  color: var(--maroon);
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+}
+
+/* Form Labels */
+.formLabel {
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--maroon);
+  display: inline-block;
+  width: 110px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+/* Form Fields */
+.formField {
+  font-size: 1rem;
+  padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
 }
 
-/* Submit button */
-.form-inner button {
-  width: 100%;
-  padding: 12px;
+/* Required field asterisk */
+.asterisk {
+  color: var(--red);
+  margin-left: 5px;
+}
+
+/* Buttons (e.g., Login, Submit) */
+.login {
   background-color: var(--maroon);
   color: var(--white);
+  padding: 10px 20px;
   border: none;
   border-radius: 4px;
-  margin-top: 20px;
   cursor: pointer;
   font-size: 1rem;
 }
-
-/* Button hover effect */
-.form-inner button:hover {
+.login:hover {
   background-color: var(--gold);
+}
+
+/* Standings sections (Balance, Expiration, History) */
+.standingsDiv {
+  background-color: var(--offWhite);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 460px;
+}
+.standingsHeadline {
+  font-size: 1.5rem;
+  color: var(--maroon);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Home link styling */
+.homelink {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1rem;
 }
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
-  .form-container {
-    padding: 16px;
+  #centeringDiv {
+    padding: 10px;
   }
-  .form-inner {
+  #main {
     padding: 15px;
+  }
+  .formLabel {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  .formField {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .pageHeadlines {
+    font-size: 1.5rem;
+  }
+  .standingsDiv {
+    width: 100%;
+    margin: 20px auto;
   }
 }
