@@ -96,7 +96,7 @@ body.page {
 /* Main content area */
 #main {
   background-color: var(--white);
-  width: 760px;
+  width: 760px !important;
   border: 5px solid maroon;
   padding: 20px;
   border-radius: 8px;
