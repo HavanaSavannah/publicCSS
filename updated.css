@@ -65,7 +65,7 @@
 
 body.page {
   background-image: url("https://havanasavannah.com/images/c28d7be94498f66129c5.png");
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   font-family: Arial, sans-serif;
   margin: 0;
